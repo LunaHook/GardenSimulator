@@ -26,7 +26,7 @@ jobs:
         run: python -m pip install --upgrade pygbag
 
       - name: Build game with pygbag
-        run: python -m pygbag . --build
+        run: python -m pygbag --build .
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
